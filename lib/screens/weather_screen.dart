@@ -1,5 +1,6 @@
 import 'package:bloc_weather_app/bloc/weather_bloc.dart';
 import 'package:bloc_weather_app/models/weather_model.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -60,12 +61,26 @@ class _WeatherScreenState extends State<WeatherScreen> {
         Container(
           decoration: const BoxDecoration(color: Colors.black38),
         ),
-        const Padding(
-          padding: EdgeInsets.all(20.0),
-          child: Center(
-              child: CityInputField(
-            hintText: "Enter City Name & Check Weather",
-          )),
+        Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text(
+                "Weather Check",
+                textScaleFactor: 2.5,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.all(20.0),
+                child: CityInputField(
+                  hintText: "Enter City Name...",
+                ),
+              ),
+            ],
+          ),
         ),
       ],
     );

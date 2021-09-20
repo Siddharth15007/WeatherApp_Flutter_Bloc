@@ -14,6 +14,7 @@ class CityInputField extends StatelessWidget {
       textInputAction: TextInputAction.search,
       decoration: InputDecoration(
         hintText: hintText,
+        hoverColor: Colors.white,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
         ),
