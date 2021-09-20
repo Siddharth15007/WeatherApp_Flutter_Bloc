@@ -1,4 +1,4 @@
-# bloc_weather_app
+# Weather Check Flutter Application
 
 A new Flutter project using Bloc State Mangement.
 
@@ -15,7 +15,4 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-![alt text](./snapshots/2.png) 
 ![alt text](./snapshots/1.png)
-![alt text](./snapshots/3.png)
-![alt text](./snapshots/4.png)
